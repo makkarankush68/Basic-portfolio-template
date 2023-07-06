@@ -1,64 +1,115 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>My Portfolio</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <button id="darkModeToggle" >Toggle Dark Mode</button>
-    </nav>
-  </header>
+  <head>
+    <title>Ankush Makkar - portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
   
-  <section id="home">
-    <h1>Welcome to My Portfolio</h1>
-    <p>Hi, I'm Ankush Makkar.</p>
-  </section>
-  
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I have several years of experience in web development...</p>
-  </section>
-  
-  <section id="projects">
-    <h2>My Projects</h2>
-    <div class="project">
-      <h3>Project 1</h3>
-      <p>Everything about this project 1 ...</p>
-    </div>
-    <div class="project">
-      <h3>Project 2</h3>
-      <p>Everything about this project 2 ...</p>
-    </div>
-  </section>
-  
-  <section id="contact">
-    <h2>Contact Me</h2>
-    <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name">
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email">
-      <textarea id="message" name="message" placeholder="Your message..."></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </section>
-  <script>
-    // Dark mode toggle functionality
-    const darkModeToggle = document.getElementById('darkModeToggle');
-    const body = document.body;
+  <body>
+    <header>
+      <nav>
+        <ul >
+          <a href="#index.html"><img src="AnkushMakkar.png" alt="reload" height="50px"></a>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><button  id="darkModeToggle">Dark Mode</button></li>
+        </ul>
+      </nav>
+    </header>
+    <br>
 
-    darkModeToggle.addEventListener('click', () => {
-      body.classList.toggle('dark-mode');
-    });
-    
-  </script>  
-</body>
+    <main  class="main">
+      
+    <section id="home" class="home">
+      <!-- <div class = "home2"> -->
+        <div class="home_text">
+        <h1>Hi, I'm Ankush Makkar.</h1>
+        <p>Welcome to My Portfolio</p>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, soluta! Quos modi perferendis nulla est </p>
+          <p>temporibus eligendi dolor ad perspiciatis, repellat voluptates atque, eveniet nihil optio dolores </p>
+          <p>cupiditate dolorum accusantium nemo natus iste ipsa quia! </p>
+        </div>
+        <div class="home_img">
+        <img src="AnkushMakkar.png" alt="My Image" height="250" />
+      </div>
+      <!-- </div> -->
+    </section>
+
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I have several years of experience in web development...
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni voluptate alias, aliquam qui provident modi quae nobis odit, dolorem, accusantium animi ex aliquid laboriosam voluptatibus ipsa similique? Adipisci ab ipsam ex! Maxime sed, vel exercitationem consequuntur vero consequatur nostrum perspiciatis optio sit saepe voluptatem quibusdam esse, animi qui corrupti ex sunt, aliquam possimus cum nesciunt.
+      </p>
+    </section>
+
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="project">
+        <h3>Project 1</h3>
+        <p>Description of Project 1...</p>
+      </div>
+      <div class="project">
+        <h3>Project 2</h3>
+        <p>Description of Project 2...</p>
+      </div>
+    </section>
+<section align="middle" >
+    <section id="contact"class="overlap">
+      <h2>Contact Me ✏️</h2>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" />
+        <br />
+        <br />
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+        <br />
+        <br />
+        <textarea
+          id="message"
+          name="message"
+          placeholder="Your message..."
+          style="width: 213px; height: 60px"
+        >
+        </textarea>
+        <br>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </section>
+    <script>
+      // Dark mode toggle functionality
+      const darkModeToggle = document.getElementById("darkModeToggle");
+      const body = document.body;
+
+      darkModeToggle.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+      });
+    </script>
+    </main>
+  </body>
+
+  <footer>
+    <div class="copyright">
+      Connect with me 💕
+      <div class="footer__images socialhandle">
+        <table>
+          <a href="mailto: ankushmakkar1082gmail.com" height="20"
+            ><img src="mail.png" alt="mail" id="mailimg"
+          /></a>
+          <a href="https://instagram.com/makkar.ankush68" height="20" target="_blank"
+            ><img src="ig.png" alt="insta"
+          /></a>
+          <a height="20"
+            href="https://www.linkedin.com/in/ankush-makkar-96385118a"
+            target="_blank"
+            ><img src="ld.png" alt="insta" class="ld"
+          /></a>
+        </table>
+      </div class="copyright">
+      Copyright &#169; Ankush Makkar<br />
+    </div>
+  </footer>
 </html>
