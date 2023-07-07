@@ -41,8 +41,21 @@ nav ul li a {
 main {
   margin-top: 100px; /* Add a top margin to avoid content overlay */
 }
-
-
+.col{
+  text-align: center;
+  display: flex;
+}
+.col1 {
+  
+  flex: 1;        /* distributes space on the line equally among items */
+}
+.home {
+  text-align: center;
+}
+.home_img {
+  padding-left: 50px ;
+  /* margin-left: 200px; */
+}
 
 section {
   margin: 10px;
@@ -54,7 +67,7 @@ section {
 }
 section h2 {
   margin-top: 0;
-  font-size: 28px;
+  font-size: 20px;
   margin-bottom: 20px;
 }
 
