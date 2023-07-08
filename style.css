@@ -92,7 +92,7 @@ section p {
   color: #fff;
   text-align: center;
   padding:25px;
-  font-size: small;
+  font-size: medium;
 }
 
 .footer__images{
@@ -104,8 +104,8 @@ section p {
   width:40px;
   margin:10px;
   margin-bottom: 20px;
-  transform: translateY(10px);
-  transition:0.5s;
+  transform: translateY(11px);
+  transition:0.6s;
   }
   .socialhandle img:hover{
       transform:scale(1.2) ;
