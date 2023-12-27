@@ -2,96 +2,94 @@
 <html>
   <head>
     <title>Ankush Makkar - portfolio</title>
-    <meta charset="UTF-8">
-    <link rel="shortcut icon" href="AnkushMakkar.png" type="image/x-icon">
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="AnkushMakkar.png" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
-  
+
   <body>
-      <nav class="col" >
-        <ul class="col1" >
-          <a style="flex-grow: 1.5" href="https://makkarankush68.github.io/Basic-portfolio-website/"><img src="logo_no_bg.png" alt="reload" height="50px"></a>
-          <li style="flex-grow: 1"><a class="hover-underline-animation" href="#home">Home</a></li>
-          <li style="flex-grow: 1"><a class="hover-underline-animation" href="#about">About</a></li>
-          <li style="flex-grow: 1"><a class="hover-underline-animation" href="#projects">Projects</a></li>
-          <li style="flex-grow: 1"><a class="hover-underline-animation" href="#contact">Contact</a></li>
-          <li style="flex-grow: 1"><button  id="darkModeToggle">Dark Mode</button></li>
-        </ul>
-      </nav>
+    <nav class="col">
+      <ul class="col1 nav_items">
+        <a href="/"><img src="ankush.gif" alt="logo-reload" height="50px" /></a>
+        <li><a class="hover-underline-animation" href="#home">Home</a></li>
+        <li><a class="hover-underline-animation" href="#about">About</a></li>
+        <li>
+          <a class="hover-underline-animation" href="#projects">Projects</a>
+        </li>
+        <li>
+          <a class="hover-underline-animation" href="#contact">Contact</a>
+        </li>
+        <li><button id="darkModeToggle">Dark Mode</button></li>
+        <li><button id="changecolor">Random color</button></li>
+      </ul>
+    </nav>
 
-    <main  class="main">
+    <main class="main">
+      <section id="home">
+        <div class="col home_main">
+          <div style="flex-grow: 2.5" class="col1">
+            <h1>Hi, I'm Ankush Makkar &#128075;</h1>
+            <h2>Welcome to My Portfolio</h2>
+            <p>
+              I'm currently pursuing a Bachelor's degree in Computer Science
+              Engineering and Technology . <br />The feild of Technology never
+              fails to amaze me, therefore I'm learning something new everyday,
+              <br />Currently exploring web development and the feild of web3
+              and blockchain with ICP &#128522;
+            </p>
+          </div>
+          <div style="flex-grow: 1" class="col1 home_img">
+            <img src="AnkushMakkar.png" alt="My Image" height="250" />
+          </div>
+        </div>
+      </section>
 
-    <section id="home">
-      <div class="col">
-        <div style="flex-grow: 2.5" class="col1">
-          <h1>Hi, I'm Ankush Makkar &#128075;</h1>
-          <h2>Welcome to My Portfolio</h2>
-            <p>I'm currently pursuing a Bachelor's degree in Computer Science Engineering and Technology .
-            <br>The feild of Technology never fails to amaze me, therefore I'm learning something new everyday,
-            <br>Currently exploring web development and the feild of web3 and blockchain with ICP &#128522;
-            </p></div>
-        <div style="flex-grow: 1" class="col1"><img src="AnkushMakkar.png" alt="My Image" height="250" /></div>
-      </div>
-    </section>
+      <section id="about">
+        <h1>About Me</h1>
+        <p>
+          I am a versatile programmer proficient in C, C++, HTML, CSS,
+          Git-GitHub, Linux, and ICP blockchain. <br />
+          With a passion for problem-solving and a strong foundation in these
+          technologies, I am eager to <br />contribute to innovative projects
+          and make a positive impact in the field of technology.
+        </p>
+      </section>
 
+      <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+          <h3>Project 1</h3>
+          <p>Description of Project 1...</p>
+        </div>
+        <div class="project">
+          <h3>Project 2</h3>
+          <p>Description of Project 2...</p>
+        </div>
+      </section>
 
-
-    <section id="about">
-      <h1>About Me</h1>
-      <p>I am a versatile programmer proficient in C, C++, HTML, CSS, Git-GitHub, Linux, and ICP blockchain. 
-        <br> With a passion for problem-solving and a strong foundation in these technologies, I am eager to 
-        <br>contribute to innovative projects and make a positive impact in the field of technology.
-      </p>
-    </section>
-
-    <section id="projects">
-      <h2>My Projects</h2>
-      <div class="project">
-        <h3>Project 1</h3>
-        <p>Description of Project 1...</p>
-      </div>
-      <div class="project">
-        <h3>Project 2</h3>
-        <p>Description of Project 2...</p>
-      </div>
-    </section>
-
-    <section align="middle" >
-    <section id="contact" class="overlap">
-      <h2>Contact Me &#9997;</h2>
-      <form>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" />
-        <br />
-        <br />
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" />
-        <br />
-        <br />
-        <textarea
-          id="message"
-          name="message"
-          placeholder="Your message..."
-          style="width: 213px; height: 60px"
-        ></textarea>
-        <br>
-        <button type="submit">Send</button>
-      </form>
-    </section>
-  </section>
-
+      <section id="contact" class="overlap">
+        <h2>Contact Me &#9997;</h2>
+        <form>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" />
+          <br />
+          <br />
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+          <br />
+          <br />
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Your message..."
+            style="width: 213px; height: 60px"
+          ></textarea>
+          <br />
+          <button type="submit">Send</button>
+        </form>
+      </section>
     </main>
   </body>
-    
-    <script>
-      // Dark mode toggle functionality
-      const darkModeToggle = document.getElementById("darkModeToggle");
-      const body = document.body;
-
-      darkModeToggle.addEventListener("click", () => {
-        body.classList.toggle("dark-mode");
-      });
-    </script>
 
   <footer>
     <div class="copyright">
@@ -101,20 +99,53 @@
           <a href="mailto: ankushmakkar108@gmail.com" height="20"
             ><img src="mail.png" alt="mail" id="mailimg"
           /></a>
-          <a href="https://github.com/makkarankush68" height="20" target="_blank"
+          <a
+            href="https://github.com/makkarankush68"
+            height="20"
+            target="_blank"
             ><img src="github.png" alt="github"
           /></a>
-          <a height="20"
+          <a
+            height="20"
             href="https://www.linkedin.com/in/ankush-makkar-96385118a"
             target="_blank"
             ><img src="ld.png" alt="insta" class="ld"
           /></a>
-          <a href="https://instagram.com/makkar.ankush68" height="20" target="_blank"
+          <a
+            href="https://instagram.com/makkar.ankush68"
+            height="20"
+            target="_blank"
             ><img src="ig.png" alt="insta"
           /></a>
         </table>
-      </div class="copyright">
-      Copyright &#169; Ankush Makkar<br />
+      </div>
+      <div class="copyright-text">Copyright &#169; Ankush Makkar<br /></div>
     </div>
   </footer>
+  <script>
+    // Dark mode toggle functionality
+    const darkModeToggle = document.getElementById("darkModeToggle");
+    const body = document.body;
+
+    darkModeToggle.addEventListener("click", () => {
+      body.classList.toggle("dark-mode");
+    });
+
+    // Random color functionality
+    const randomColorToggle = document.getElementById("changecolor");
+    randomColorToggle.addEventListener("click", function () {
+      // making random color
+      console.log("Changing color");
+      let actual = Math.floor(Math.random() * 1000000);
+      // let c1 = "#";
+      // let c2 = actual.toString();
+      // let c3 = c1.concat(c2);
+      // console.log(c3);
+
+      // implementing it
+      // let content = document.querySelector(':root');
+      document.documentElement.style.setProperty("--randomColor", "#" + actual);
+      // content.style.backgroundColor = c3;
+    });
+  </script>
 </html>
