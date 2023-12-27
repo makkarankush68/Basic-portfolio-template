@@ -55,6 +55,13 @@ nav ul li a {
   /* font-size: 18px; */
   font-size: 2vm;
 }
+.nav-btn{
+  padding: 0.5rem;
+  color: #fff;
+  background-color: #202020ae;
+  border: 2px solid rgb(56, 56, 56);
+  border-radius: 0.5rem;
+}
 /* .nav_items,li{
   font-size: 2vm;
 } */
@@ -135,6 +142,9 @@ section p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.submit-btn{
+  transform: translateX(90px) translateY(18px);
 }
 .copyright{
   background-color: #333 ; 

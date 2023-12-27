@@ -19,8 +19,8 @@
         <li>
           <a class="hover-underline-animation" href="#contact">Contact</a>
         </li>
-        <li><button id="darkModeToggle">Dark Mode</button></li>
-        <li><button id="changecolor">Random color</button></li>
+        <li><button id="changecolor" class="nav-btn">Random color</button></li>
+        <li><button id="darkModeToggle" class="nav-btn">Light Mode</button></li>
       </ul>
     </nav>
 
@@ -56,7 +56,7 @@
       </section>
 
       <section id="projects">
-        <h2>My Projects</h2>
+        <h2>My Projects (To Be Updated)</h2>
         <div class="project">
           <h3>Project 1</h3>
           <p>Description of Project 1...</p>
@@ -85,7 +85,7 @@
             style="width: 213px; height: 60px"
           ></textarea>
           <br />
-          <button type="submit">Send</button>
+          <button type="submit" class="nav-btn submit-btn">Send</button>
         </form>
       </section>
     </main>
@@ -126,9 +126,13 @@
     // Dark mode toggle functionality
     const darkModeToggle = document.getElementById("darkModeToggle");
     const body = document.body;
-
+    body.classList.toggle("dark-mode");
+    let tgl = 1;
     darkModeToggle.addEventListener("click", () => {
       body.classList.toggle("dark-mode");
+      tgl++;
+      if(tgl%2) darkModeToggle.innerText = 'Light Mode';
+      else darkModeToggle.innerText = 'Dark Mode';
     });
 
     // Random color functionality
