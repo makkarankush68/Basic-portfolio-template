@@ -97,7 +97,13 @@ nav ul li a {
 }
 /* main {
 } */
-
+ section h1,
+ section h2,
+ section h3,
+ section form,
+ section p {
+  color: #000000;
+}
 .col{
   
   text-align: center;
@@ -127,6 +133,7 @@ nav ul li a {
   border-radius: 50%;
 }
 section {
+  color: #000000;
   margin: 10px;
   padding: 50px;
   background-color: #ffffffda;
